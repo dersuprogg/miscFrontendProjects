@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2B2A33;
+}
+
+.user-card {
+  background-color: #42414D;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 100px;
+}
+
+.user-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.user-name {
+  padding-left: 10px;
+  font-size: 20px;
+  color: #F7EFE5;
+}
+
+.user-status {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 10px;
+  border-radius: 100px;
+}
+
+.user-status.status-online {
+  background-color: #5FD068;
+}
+
+.user-status.status-offline {
+  background-color: #2B2A33;
+}
