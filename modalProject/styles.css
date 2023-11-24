@@ -56,6 +56,12 @@ body {
   border-radius: 3px;
   padding: 5px 10px;
   color: #dfdfdf;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover,
+.close-modal {
+  cursor: pointer;
 }
 
 .btn.btn-accept {
@@ -64,4 +70,12 @@ body {
 
 .btn.btn-cancel {
   background-color: #B31312;
+}
+
+.btn.btn-accept:hover {
+  background-color: #278441;
+}
+
+.btn.btn-cancel:hover {
+  background-color: #a11110;
 }
