@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #303c66;
+  font-family: "Cascadia Mono";
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  color: #c6c6c6;
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  color: #c6c6c6;
+}
+
+.screen,
+.main-btns {
+  background-color: #192655;
+
+}
+
+.calculator {
+  max-width: 250px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+
+}
+
+.main-btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+  border-radius: 7px;
+  color: #17224d;
+}
+
+.btn-equal,
+.btn-reset {
+  grid-column: span 2;
+}
+
+.btn.btn-equal {
+  background-color: firebrick;
+  color: #c6c6c6;
+}
+
+
+
+.btn.btn-del,
+.btn.btn-reset {
+  background-color: #3876BF;
+  color: #c6c6c6;
+}
+
+.screen {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  text-align: right;
+  color: #c6c6c6;
+  font-size: 24px;
+  border-radius: 7px;
+}
+
+.btn {
+  color: #17224d;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  background-color: #c6c6c6;
+  padding: 7px 14px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #5e6788;
+  color: #c6c6c6;
+}
