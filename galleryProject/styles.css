@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  padding: 10px;
+  background-color: #42414d;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  grid-auto-flow: dense;
+  grid-auto-rows: 200px;
+  align-items: stretch;
+}
+
+img {
+  width: 100%;
+  border: 2px solid #C92C6D;
+  object-fit: cover;
+  object-position: top;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.tall {
+  grid-row: span 2;
+}
