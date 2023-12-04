@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1 {
+  font-weight: 400;
+}
+
+.card {
+  width: 300px;
+  height: 120px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+h1::after {
+  content: "";
+  display: block;
+  background-color: #06bdfc;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: calc(100% - 5px);
+  transition: transform 0.3s cubic-bezier(0.85, 0, 0.15, 1);
+  z-index: -1;
+}
+
+.card:hover h1::after {
+  transform: translateY(calc(-100% + 5px));
+}
