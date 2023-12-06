@@ -76,3 +76,19 @@ body {
   background-color: #219C90;
   box-shadow: 0 0 12px 2px #219C90;
 }
+
+
+@media (min-width: 1000px) {
+  .cards {
+    flex-direction: row;
+  }
+
+  .card {
+    justify-content: flex-end;
+  }
+
+  .btn {
+    padding: 1rem 3rem;
+
+  }
+}
