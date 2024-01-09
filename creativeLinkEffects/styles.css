@@ -39,7 +39,7 @@ body {
   content: "";
   display: block;
   height: 0;
-  background-color: #00d9ff;
+  background-color: #fbff00;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -61,7 +61,7 @@ body {
   content: "";
   display: block;
   height: 5px;
-  background-color: #00d9ff;
+  background-color: #fbff00;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -225,5 +225,46 @@ body {
 
 .seventh:hover::after,
 .seventh:hover::before {
+  transform: scaleX(1);
+}
+
+.eigth {
+  position: relative;
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+
+.eigth::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #63fd3d;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.3em;
+  transition: all 0.3s ease;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.eigth::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #63fd3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.3em;
+  transition: all 0.3s ease;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+.eigth:hover::after,
+.eigth:hover::before {
   transform: scaleX(1);
 }
