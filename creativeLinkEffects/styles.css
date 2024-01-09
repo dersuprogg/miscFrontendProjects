@@ -145,3 +145,85 @@ body {
 .fifth:hover::after {
   transform: scaleX(1);
 }
+
+.sixth {
+  position: relative;
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+
+.sixth::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #63fd3d;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.3em;
+  transition: all 0.3s ease;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.sixth::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #63fd3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.3em;
+  transition: all 0.3s ease;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.sixth:hover::after,
+.sixth:hover::before {
+  transform: scaleX(1);
+}
+
+.seventh {
+  position: relative;
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+
+.seventh::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #63fd3d;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.3em;
+  transition: all 0.3s ease;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+.seventh::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #63fd3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.3em;
+  transition: all 0.3s ease;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+.seventh:hover::after,
+.seventh:hover::before {
+  transform: scaleX(1);
+}
