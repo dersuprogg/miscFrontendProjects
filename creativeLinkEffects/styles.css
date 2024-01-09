@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 20rem;
+  max-width: 30rem;
   margin: 5rem auto;
   display: flex;
   flex-direction: column;
@@ -52,6 +52,29 @@ body {
   height: 4px;
 }
 
+.second {
+  position: relative;
+  padding-bottom: 7px;
+}
+
+.second::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #00d9ff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.3em;
+  transition: all 0.3s ease;
+  transform: scaleY(0);
+}
+
+.second:hover::after {
+  transform: scaleY(1);
+}
+
 .third {
   position: relative;
   padding-bottom: 7px;
@@ -72,5 +95,53 @@ body {
 }
 
 .third:hover::after {
+  transform: scaleX(1);
+}
+
+.fourth {
+  position: relative;
+  padding-bottom: 7px;
+}
+
+.fourth::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #00d9ff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.3em;
+  transition: all 0.3s ease;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.fourth:hover::after {
+  transform: scaleX(1);
+}
+
+.fifth {
+  position: relative;
+  padding-bottom: 7px;
+}
+
+.fifth::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #00d9ff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.3em;
+  transition: transform 0.3s ease;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+.fifth:hover::after {
   transform: scaleX(1);
 }
