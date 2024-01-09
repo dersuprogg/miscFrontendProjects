@@ -12,3 +12,65 @@
 body {
   background-color: #2b2a33;
 }
+
+.container {
+  width: 20rem;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.first {
+  position: relative;
+  padding-bottom: 7px;
+}
+
+.first::after {
+  content: "";
+  display: block;
+  height: 0;
+  background-color: #00d9ff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.3em;
+  transition: all 0.3s ease;
+}
+
+.first:hover::after {
+  height: 4px;
+}
+
+.second {
+  position: relative;
+  padding-bottom: 7px;
+}
+
+.second::after {
+  content: "";
+  display: block;
+  background-color: #00d9ff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.3em;
+  height: 4px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.second:hover::after {
+  transform: scaleX(1);
+}
