@@ -52,12 +52,12 @@ body {
   height: 4px;
 }
 
-.second {
+.third {
   position: relative;
   padding-bottom: 7px;
 }
 
-.second::after {
+.third::after {
   content: "";
   display: block;
   background-color: #00d9ff;
@@ -71,6 +71,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-.second:hover::after {
+.third:hover::after {
   transform: scaleX(1);
 }
