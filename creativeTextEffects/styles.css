@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img,
+input {
+  display: block;
+  width: 100%;
+}
+
+input,
+button,
+a {
+  font-family: inherit;
+}
