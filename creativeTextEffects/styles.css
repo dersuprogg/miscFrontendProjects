@@ -24,3 +24,46 @@ button,
 a {
   font-family: inherit;
 }
+
+.container {
+  max-width: 60rem;
+  width: 80%;
+  margin: 10rem auto;
+  padding: 0 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Menlo";
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+h1 {
+  overflow: hidden;
+}
+
+h1::after {
+  content: "@DERSUPROGG";
+  display: block;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  bottom: -100%;
+  right: 0;
+  transition: all 0.3s ease-in;
+}
+
+h1:hover::after {
+  bottom: 0;
+}
+
+.first {
+  display: block;
+  transition: all 0.3s ease-in;
+}
+
+h1:hover .first {
+  transform: translateY(-100%);
+}
